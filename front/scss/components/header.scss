@@ -1,0 +1,13 @@
+.header {
+    width: 100%;
+    padding: 15px 0 17px;
+    background: getColor(grey);
+
+    &__logo {
+        display: inline;
+        float: left;
+        top: -4px;
+        position: relative;
+        margin-right: 25px;
+    }
+}

@@ -1,0 +1,17 @@
+@mixin text($font-family, $font-size, $color, $font-weight, $text-transform, $text-align) {
+	font-family: $font-family;
+	font-size: getFontSize($font-size);
+	font-weight: $font-weight;
+	color: getColor($color);
+	text-transform: $text-transform;
+	text-align: $text-align;
+}
+
+@mixin border($position, $size, $color) {
+	@if $position == '' {
+		 border: solid $size+px getColor($color);
+	 } @else {
+		border-#{$position}: solid $size+px getColor($color);
+	 }
+}
+

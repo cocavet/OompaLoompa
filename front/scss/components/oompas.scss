@@ -1,0 +1,28 @@
+&__list {
+    margin: 0 0 30px;
+    display: block;
+}
+
+&__img {
+    width:100%;
+    margin-bottom: 20px;
+}
+
+&__title {
+    @extend %text__h3;
+    margin: 0 0 2px;
+}
+
+&__text {
+    @extend %text__p;
+    margin: 0 0 2px;
+
+    &.--italic {
+        font-style: italic;
+    }
+
+    &.--black {
+        color: getColor(black);
+        line-height: 27px;
+    }
+}

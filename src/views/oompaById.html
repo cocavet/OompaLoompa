@@ -1,0 +1,18 @@
+{% extends "template.html" %}
+    {% block content %}
+        <div class="container oompaById">
+            {% for data in oompa %}
+                <div class="columns">
+                    <div class="column is-half">
+                        <img class="oompaById__img" src="https://s3.eu-central-1.amazonaws.com/napptilus/level-test/{{ data.image }}">
+                    </div>
+                    <div class="column is-half">    
+                        <h3 class="oompaById__title">{{ data.first_name }} {{ data.last_name }}</h3>
+                        <p class="oompaById__text">{{ "Man" if data.gender == 'M' else "Woman" }}</p>
+                        <p class="oompaById__text --italic">{{ data.profession }}</p>
+                        <p class="oompaById__text --black">{{ data.favorite.song }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% endblock %}

@@ -1,0 +1,48 @@
+.index {
+    &__h1 {
+        @extend %text__h1;
+        margin: 20px 0 0;
+    }
+
+    &__h2 {
+        @extend %text__h2;
+        margin: 0 0 80px;
+    }
+
+    &__oompas {
+        .oompa {
+            @import '../../components/oompas';
+
+            &:hover {
+                .oompa__title {
+                    color: getColor(blue);
+                }
+            }
+        }
+    }
+
+    &__search {
+        position: relative;
+        height: 40px;
+        margin-top: 35px;
+
+        .search {
+            position: absolute;
+            right: 0;
+            top: 0;
+            
+            @import '../../components/search';
+
+            &:after {
+                @include border('left', 1, grey);
+
+                content: "\e914";
+                position: absolute;
+                right: 16px;
+                font-family: 'icomoon';
+                top: 11px;
+                padding: 0 0 0 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{% for oompa in oompas %}
+    <li class="oompa column is-one-third" data-profession="{{ oompa.profession }}" data-name="{{ oompa.first_name }} {{ oompa.last_name }}">
+        <a class="oompa__list" href="{{ oompa.id }}">
+            <img class="oompa__img" src="https://s3.eu-central-1.amazonaws.com/napptilus/level-test/{{ oompa.image }}">
+            <h3 class="oompa__title">{{ oompa.first_name }} {{ oompa.last_name }}</h3>
+            <p class="oompa__text">{{ "Man" if oompa.gender == 'M' else "Woman" }}</p>
+            <p class="oompa__text --italic">{{ oompa.profession }}</p>
+        </a>
+    </li>
+{% endfor %}

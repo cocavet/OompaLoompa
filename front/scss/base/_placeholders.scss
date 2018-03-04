@@ -1,0 +1,31 @@
+%text__h1 {
+	@include text('Open Sans', h1, black, 400, inherit, center);
+}
+
+%text__h2 {
+	@include text('Open Sans', h2, grey--dark, 400, inherit, center);
+}
+
+%text__h3 {
+	@include text('Open Sans', h3, black, 700, inherit, left);
+}
+
+%text__p {
+	@include text('Open Sans', text, grey--dark, 400, inherit, left);
+}
+
+%input__text {
+	@include border('', 1, grey);
+
+	appearance: none;
+	-webkit-appearance: none;
+	border-radius: 5px;
+	padding: 10px 50px 10px 10px; 
+	font-size: 14px;
+	box-shadow: none;
+	outline: none;
+
+	&:focus {
+		@include border('', 1, blue);
+	}
+}

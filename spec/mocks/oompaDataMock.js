@@ -1,0 +1,35 @@
+module.exports = [{
+        id: 1,
+        first_name: 'pau',
+        last_name: 'obrador',
+        gender: 'M',
+        image: '1.jpg',
+        profession: 'Frontend developer',
+        email: 'pau.obpi@gmail.com',
+        age: 32,
+        country: 'Spain',
+        height: 78,
+        oompaType: 'employee',
+        color: 'blue',
+        food: 'red onions',
+        random_string: 'This is a random string',
+        song: 'bla bla bla'
+    },
+    {
+        id: 1,
+        first_name: 'pau',
+        last_name: 'obrador',
+        gender: 'M',
+        image: '1.jpg',
+        profession: 'Frontend developer',
+        email: 'pau.obpi@gmail.com',
+        age: 32,
+        country: 'Spain',
+        height: 78,
+        oompaType: 'employee',
+        color: 'blue',
+        food: 'red onions',
+        random_string: 'This is a random string',
+        song: 'bla bla bla'
+    }
+];
